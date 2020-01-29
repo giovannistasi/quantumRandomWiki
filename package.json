@@ -1,0 +1,49 @@
+{
+  "name": "codeworks-chat-server-exercise",
+  "version": "2.1.6",
+  "description": "A Codeworks exercise to train students",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/codeworks/chat-server-exercise.git"
+  },
+  "scripts": {
+    "precommit": "gulp lint"
+  },
+  "author": "Codeworks",
+  "license": "UNLICENSED",
+  "private": true,
+  "devDependencies": {
+    "cz-changelog": "^1.0.1",
+    "del": "^4.1.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-json": "^1.4.0",
+    "gulp": "^4.0.2",
+    "gulp-eslint": "^5.0.0",
+    "gulp-htmllint": "0.0.16",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-replace": "^1.0.0",
+    "gulp-stylelint": "^9.0.0",
+    "husky": "2.2.0",
+    "stylelint": "10.0.1",
+    "stylelint-config-standard": "^18.3.0"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-changelog"
+    }
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "gulp lint && npm test"
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/codeworks/chat-server-exercise/issues"
+  },
+  "homepage": "https://github.com/codeworks/chat-server-exercise#readme",
+  "dependencies": {
+    "qrand": "0.1.x"
+  },
+  "keywords": []
+}
